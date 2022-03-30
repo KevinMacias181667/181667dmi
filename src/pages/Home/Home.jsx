@@ -1,5 +1,5 @@
 import React from "react";
-import { Text, View } from 'react-native';
+import { Text, View,Linking } from 'react-native';
 
 import {styles} from "./Home.styles";
 
@@ -9,8 +9,11 @@ export default function HomeScreen({ onPress }){
 
     return (
       <View style={styles.container}>
-        <Text>Menu</Text>
-        <ButtonComponent title="Logout" onPress={onPress} />
+        <Text style={{color:'red'}}
+        onPress={()=>Linking.openURL("https://github.com/KevinMacias181667/181667dmi")}>
+        GitHub
+
+        </Text>
       </View>
     )
   }
