@@ -8,8 +8,6 @@ export const onCreateTodo = /* GraphQL */ `
       titulo
       autor
       isbm
-      name
-      description
       createdAt
       updatedAt
     }
@@ -22,8 +20,8 @@ export const onUpdateTodo = /* GraphQL */ `
       titulo
       autor
       isbm
-      name
-      description
+      
+      
       createdAt
       updatedAt
     }
@@ -36,8 +34,6 @@ export const onDeleteTodo = /* GraphQL */ `
       titulo
       autor
       isbm
-      name
-      description
       createdAt
       updatedAt
     }
