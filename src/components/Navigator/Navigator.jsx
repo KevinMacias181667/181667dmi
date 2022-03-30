@@ -54,7 +54,7 @@ export default function MainNavigator({ signOut }){
        },
 
        tabBarActiveTintColor: "red",
-       tabBarInactiveTintColor: "yellow",
+       tabBarInactiveTintColor: "green",
      })}
      >
        <Tab.Screen name="Home"
