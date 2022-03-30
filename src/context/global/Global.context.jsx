@@ -11,7 +11,7 @@ export const GlobalProvider = ({ children}) =>{
     const [state, setState] = useState(initialState);
 
     function login (){
-        const user = { name: "Kevin", lastname: "Macias"};
+        const user = { name: "Kevin", lastname: "Macias UwU"};
 
         setState((current)=>({...current, user}));
     }

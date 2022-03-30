@@ -9,17 +9,17 @@ import { list, create, onCreate } from "../../services/todos";
 export default function ListaScreen(){
   const [todos, setTodos] = useState();
 
-  const [todo, setTodo] = useState({titulo:"", autor:"", iSBN:""})
+  const [todo, setTodo] = useState({titulo:"", autor:"", isbm:""})
 async function listTodos(){
   const todosFetched = await list();
   if(todosFetched) setTodos(todosFetched);
 } 
-async function createTodo(titulo, autor, iSBN){
-  const todoCreated = await create({titulo, autor, iSBN});
+async function createTodo(titulo, autor, isbm){
+  const todoCreated = await create({titulo, autor, isbm});
   return todoCreated;
 }
 const addData = () => {
-  createTodo(todo.titulo, todo.autor, todo.iSBN);
+  createTodo(todo.titulo, todo.autor, todo.isbm);
 };
 
 useEffect(() =>{
@@ -42,7 +42,7 @@ return (
 
         {todos && 
           todos.map((todo)=> (
-          <Text key={todo.id}> {`${todo.titulo} ${todo.autor, todo.iSBN}`}</Text>
+          <Text key={todo.id}> {`${todo.titulo} ${todo.autor, todo.isbm}`}</Text>
           ))}
 
       </View>

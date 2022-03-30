@@ -9,7 +9,7 @@ export default function HomeScreen({ onPress }){
 
     return (
       <View style={styles.container}>
-        <Text>Menu Inicial</Text>
+        <Text>Menu</Text>
         <ButtonComponent title="Logout" onPress={onPress} />
       </View>
     )
