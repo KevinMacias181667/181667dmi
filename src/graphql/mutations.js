@@ -7,11 +7,12 @@ export const createTodo = /* GraphQL */ `
     $condition: ModelTodoConditionInput
   ) {
     createTodo(input: $input, condition: $condition) {
-      
       id
       titulo
       autor
       isbm
+      name
+      description
       createdAt
       updatedAt
     }
@@ -24,6 +25,9 @@ export const updateTodo = /* GraphQL */ `
   ) {
     updateTodo(input: $input, condition: $condition) {
       id
+      titulo
+      autor
+      isbm
       name
       description
       createdAt
@@ -38,6 +42,9 @@ export const deleteTodo = /* GraphQL */ `
   ) {
     deleteTodo(input: $input, condition: $condition) {
       id
+      titulo
+      autor
+      isbm
       name
       description
       createdAt

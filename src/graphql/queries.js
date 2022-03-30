@@ -4,10 +4,12 @@
 export const getTodo = /* GraphQL */ `
   query GetTodo($id: ID!) {
     getTodo(id: $id) {
-      ID
-      Titulo
-      Autor
-      ISBN
+      id
+      titulo
+      autor
+      isbm
+      name
+      description
       createdAt
       updatedAt
     }
@@ -22,6 +24,9 @@ export const listTodos = /* GraphQL */ `
     listTodos(filter: $filter, limit: $limit, nextToken: $nextToken) {
       items {
         id
+        titulo
+        autor
+        isbm
         name
         description
         createdAt
