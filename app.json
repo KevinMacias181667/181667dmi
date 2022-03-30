@@ -1,7 +1,7 @@
 {
   "expo": {
     "name": "181667dmi",
-    "slug": "181667dmi",
+    "slug": "bibliotecauwu",
     "version": "1.0.0",
     "orientation": "portrait",
     "icon": "./assets/icon.png",
@@ -27,6 +27,8 @@
     },
     "web": {
       "favicon": "./assets/favicon.png"
-    }
+    },
+    "description": "",
+    "githubUrl": "https://github.com/KevinMacias181667/181667dmi"
   }
 }
