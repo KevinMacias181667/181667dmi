@@ -13,8 +13,8 @@ export const createTodo = /* GraphQL */ `
       isbm
       name
       description
-      createdAt
-      updatedAt
+      status
+     
     }
   }
 `;
