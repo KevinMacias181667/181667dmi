@@ -10,5 +10,5 @@ type Todo @model {
   name: String!
   description: String!
   status: String!
-  fechaPublicación: String!
+  fechaPublicacion: String!
 }
