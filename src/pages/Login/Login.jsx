@@ -9,7 +9,7 @@ export default function Login({onPress}){
 return (
     <View style={styles.container}>
       <StatusBar/>
-      <Text>LogIn</Text>
+      <Text>{i18n.t("Login")}</Text>
       <ButtonComponent title="Login" onPress={onPress} />
     </View>
   );

@@ -1,6 +1,9 @@
 {
-
-"ISBN":"ISBN"
-
-
+"Agregar libro":"Add book",
+"Autor":"Author",
+"ISBN": "ISBN",    
+"Nombre":"Name",
+"Descripción":"Description",
+"Estatus":"Status",
+"Acceder":"Login"
 }
