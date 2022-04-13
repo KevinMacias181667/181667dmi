@@ -11,7 +11,9 @@ export const getTodo = /* GraphQL */ `
       name
       description
       status
-     
+      fechaPublicacion
+      createdAt
+      updatedAt
     }
   }
 `;
@@ -30,7 +32,9 @@ export const listTodos = /* GraphQL */ `
         name
         description
         status
-        
+        fechaPublicacion
+        createdAt
+        updatedAt
       }
       nextToken
     }

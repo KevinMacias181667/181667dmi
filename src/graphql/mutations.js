@@ -14,7 +14,9 @@ export const createTodo = /* GraphQL */ `
       name
       description
       status
-     
+      fechaPublicacion
+      createdAt
+      updatedAt
     }
   }
 `;
@@ -31,6 +33,7 @@ export const updateTodo = /* GraphQL */ `
       name
       description
       status
+      fechaPublicacion
       createdAt
       updatedAt
     }
@@ -49,6 +52,7 @@ export const deleteTodo = /* GraphQL */ `
       name
       description
       status
+      fechaPublicacion
       createdAt
       updatedAt
     }
