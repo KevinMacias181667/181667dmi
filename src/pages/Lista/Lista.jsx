@@ -9,7 +9,7 @@ import { list, create, onCreate } from "../../services/todos";
 export default function ListaScreen(){
   const [todos, setTodos] = useState();
 
-  const [todo, setTodo] = useState({titulo:"", autor:"", isbm:"",name:"", description:"",status:""})
+  const [todo, setTodo] = useState({titulo:"", autor:"", isbm:"",name:"", description:"",status:"",fecha})
 async function listTodos(){
   const todosFetched = await list();
   if(todosFetched) setTodos(todosFetched);
