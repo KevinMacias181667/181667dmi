@@ -14,8 +14,7 @@ export const createTodo = /* GraphQL */ `
       name
       description
       status
-      createdAt
-      updatedAt
+     
     }
   }
 `;

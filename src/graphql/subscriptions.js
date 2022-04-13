@@ -11,8 +11,7 @@ export const onCreateTodo = /* GraphQL */ `
       name
       description
       status
-      createdAt
-      updatedAt
+     
     }
   }
 `;
