@@ -11,8 +11,7 @@ export const getTodo = /* GraphQL */ `
       name
       description
       status
-      createdAt
-      updatedAt
+     
     }
   }
 `;
@@ -31,8 +30,7 @@ export const listTodos = /* GraphQL */ `
         name
         description
         status
-        createdAt
-        updatedAt
+        
       }
       nextToken
     }
