@@ -4,14 +4,15 @@
 export const onCreateTodo = /* GraphQL */ `
   subscription OnCreateTodo {
     onCreateTodo {
-    id
-    titulo
-    autor
-    isbm
-    name
-    description
-    status
-
+      id
+      titulo
+      autor
+      isbm
+      name
+      description
+      status
+      createdAt
+      updatedAt
     }
   }
 `;
@@ -23,10 +24,10 @@ export const onUpdateTodo = /* GraphQL */ `
       autor
       isbm
       name
-    description
-    status
-      
-     
+      description
+      status
+      createdAt
+      updatedAt
     }
   }
 `;
@@ -40,6 +41,8 @@ export const onDeleteTodo = /* GraphQL */ `
       name
       description
       status
+      createdAt
+      updatedAt
     }
   }
 `;

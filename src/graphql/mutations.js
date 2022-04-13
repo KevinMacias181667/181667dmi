@@ -14,7 +14,8 @@ export const createTodo = /* GraphQL */ `
       name
       description
       status
-     
+      createdAt
+      updatedAt
     }
   }
 `;
@@ -30,6 +31,7 @@ export const updateTodo = /* GraphQL */ `
       isbm
       name
       description
+      status
       createdAt
       updatedAt
     }
@@ -47,6 +49,7 @@ export const deleteTodo = /* GraphQL */ `
       isbm
       name
       description
+      status
       createdAt
       updatedAt
     }

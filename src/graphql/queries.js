@@ -1,3 +1,6 @@
+/* eslint-disable */
+// this is an auto generated file. This will be overwritten
+
 export const getTodo = /* GraphQL */ `
   query GetTodo($id: ID!) {
     getTodo(id: $id) {
@@ -8,7 +11,8 @@ export const getTodo = /* GraphQL */ `
       name
       description
       status
-     
+      createdAt
+      updatedAt
     }
   }
 `;
@@ -25,8 +29,10 @@ export const listTodos = /* GraphQL */ `
         autor
         isbm
         name
-       description
-       status
+        description
+        status
+        createdAt
+        updatedAt
       }
       nextToken
     }
