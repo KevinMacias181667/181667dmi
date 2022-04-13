@@ -4,6 +4,7 @@ import {styles} from "./AddLibro.styles";
 
 import { list, create, onCreate } from "../../services/todos";
 import ButtonComponent from "../../components/Button";
+import i18n from"../../../localizations/i18n";
 
 
 export default function AddLibroScreen(){
@@ -58,7 +59,8 @@ return (
            marginVertical:10,
           }} 
            />
-            <Text>ISBN</Text>
+            <Text>{i18n.t("ISBN")}</Text>
+          
         <TextInput
          onChangeText={(text)=>
           setTodo((current) =>({...current, isbm: text}))
