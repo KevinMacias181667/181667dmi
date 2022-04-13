@@ -8,5 +8,6 @@ type Todo @model {
   autor: String!
   isbm : String!
   name: String!
-  description: String
+  description: String!
+  status: String!
 }
