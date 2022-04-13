@@ -12,7 +12,7 @@ export const styles = StyleSheet.create({
       marginTop: 10,
     },
     blueButton: {
-        backgroundColor: "#1432E5",
+        backgroundColor: "#0000FF",
 
     },
     greenButton: {
