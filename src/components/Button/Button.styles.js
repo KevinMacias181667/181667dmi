@@ -12,11 +12,11 @@ export const styles = StyleSheet.create({
       marginTop: 10,
     },
     blueButton: {
-        backgroundColor: "#1432E5",
+        backgroundColor: "#6495ed",
 
     },
     greenButton: {
-        backgroundColor: "#00a884",
+        backgroundColor: "#228b22",
 
     },
 

@@ -1,5 +1,5 @@
 import React, {useState, useEffect} from "react";
-import { Text, View,Linking, Platform, Image } from 'react-native';
+import { Text, View,Linking, Platform, Image, Button } from 'react-native';
 import {styles} from "./Home.styles";
 import ButtonComponent from "../../components/Button";
 import i18n from "../../../localization/i18n";
@@ -89,15 +89,16 @@ export default function HomeScreen(){
     return (
       <View style={styles.container}>
         <View style={styles.screen}>
-          <Button onPress={showImagePicker} title="Select an image" />
+          <ButtonComponent onPress={showImagePicker} title="Select an image" />
+
           <Button onPress={openCamera} title="Open camera" />
         </View>
-        <ButtonComponent title = "Choose Image" onPress="PickImage"> 
+        <Button title = "Choose Image" onPress="PickImage"> 
         {image && <Image source={{uri:image}} style={{
           width:200,
           height:200
         }} ></Image>}
-        </ButtonComponent>
+        </Button>
         <Text style={{color:'red'}}
         onPress={()=>Linking.openURL("https://github.com/KevinMacias181667/181667dmi")}>
         GitHub
