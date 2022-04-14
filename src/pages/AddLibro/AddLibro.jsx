@@ -4,7 +4,7 @@ import {styles} from "./AddLibro.styles";
 
 import { list, create, onCreate } from "../../services/todos";
 import ButtonComponent from "../../components/Button";
-import i18n from"../../../localizations/i18n";
+import i18n from"../../../localization/i18n";
 
 
 export default function AddLibroScreen(){
