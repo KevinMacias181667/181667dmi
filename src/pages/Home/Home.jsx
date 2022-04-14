@@ -10,7 +10,7 @@ import ButtonComponent from "../../components/Button";
 
 export default function HomeScreen({ onPress }){
 
-  consts[image,setImage]= useState(null);
+  const [image,setImage]= useState(null);
 
   useEffect(async () =>{
     if (Platform.OS !=='web') {
