@@ -69,13 +69,22 @@ export default function HomeScreen({ onPress }){
     console.log(result);
 
     if (!result.cancelled) {
-      setPickedImagePath(result.uri);
+      setImage(result.uri);
       console.log(result.uri);
     }
   }
 
     return (
+
       <View style={styles.container}>
+        <View style={styles.screen}>
+      <View style={styles.buttonContainer}>
+        <Button onPress={showImagePicker} title="Select an image" />
+        <Button onPress={openCamera} title="Open camera" />
+      </View>
+
+
+    </View>
         <ButtonComponen title = "Choose Image" onPress="PickImage"> 
         {image && <Image source={{uri:image}} style={{
           width:200,
