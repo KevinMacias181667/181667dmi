@@ -5,6 +5,7 @@ import ButtonComponent from "../../components/Button";
 import i18n from "../../../localization/i18n";
 
 import * as ImagePicker from 'expo-image-picker'
+import Constants from 'expo-constants';
 
 import {Amplify} from "aws-amplify"
 
@@ -86,7 +87,6 @@ export default function HomeScreen(){
   }
 
     return (
-    
       <View style={styles.container}>
         <View style={styles.screen}>
           <Button onPress={showImagePicker} title="Select an image" />
@@ -103,7 +103,5 @@ export default function HomeScreen(){
         GitHub
         </Text>
       </View>
-      
-
     )
   }
