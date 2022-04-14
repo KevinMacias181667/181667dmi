@@ -3,7 +3,7 @@ import {StatusBar} from "expo-status-bar";
 import { Text, View } from 'react-native';
 import {styles} from "./Login.styles";
 import ButtonComponent from "../../components/Button";
-import i18n from "../../../localizations/i18n"
+import i18n from "../../../localization/i18n"
 
 export default function Login({onPress}){
 return (

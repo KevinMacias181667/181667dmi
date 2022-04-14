@@ -5,9 +5,9 @@ import i18n from 'i18n-js';
 
 
 
-import * as enL from "./translations/en.json";
+import * as enL from "./translation/en.json";
 
-import * as esL from "./translations/es.json";
+import * as esL from "./translation/es.json";
 
 
 

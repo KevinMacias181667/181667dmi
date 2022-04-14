@@ -2,7 +2,7 @@ import React from "react";
 import { Text, View, Linking } from 'react-native';
 import {styles} from "./Home.styles";
 import ButtonComponent from "../../components/Button";
-import i18n from "../../../localizations/i18n"
+import i18n from "../../../localization/i18n"
 
 import {Amplify} from "aws-amplify"
 
