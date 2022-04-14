@@ -15,12 +15,12 @@ async function listTodos(){
   const todosFetched = await list();
   if(todosFetched) setTodos(todosFetched);
 } 
-async function createTodo(titulo, autor, isbm){
+async function createTodo(titulo, autor, isbm, name,description, status ){
   const todoCreated = await create({titulo, autor, isbm,name,description,status});
   return todoCreated;
 }
 const addData = () => {
-  createTodo(todo.titulo, todo.autor, todo.isbm);
+  createTodo(todo.titulo, todo.autor, todo.isbm, todo.name, todo.description,todo.status);
 };
 
 useEffect(() =>{
@@ -86,4 +86,4 @@ return (
     );
   }
 
-    ///////////////////////////////// {i18n.t("")}////////////////////////////////
+  
