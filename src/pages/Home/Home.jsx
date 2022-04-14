@@ -1,14 +1,15 @@
 import React, {useState, useEffect} from "react";
 import { Text, View,Linking, Platform, Image } from 'react-native';
+import {styles} from "./Home.styles";
+import ButtonComponent from "../../components/Button";
+import i18n from "../../../localization/i18n";
 
 import * as ImagePicker from 'expo-image-picker'
 import Constants from 'expo-constants';
 
-import {styles} from "./Home.styles";
+import {Amplify} from "aws-amplify"
 
-import ButtonComponent from "../../components/Button";
-
-export default function HomeScreen({ onPress }){
+export default function HomeScreen(){
 
   const [image,setImage]= useState(null);
 
@@ -74,28 +75,40 @@ export default function HomeScreen({ onPress }){
     }
   }
 
+  async function signOut(){
+    try{
+      await Amplify.Auth.signOut({gloobal:true});
+
+    } catch(error)
+    {
+      console.log(error)
+    }
+
+  }
+
     return (
+      <View style={styles.container}>
+      <View style={styles.screen}>
+    <View style={styles.buttonContainer}>
+      <Button onPress={showImagePicker} title="Select an image" />
+      <Button onPress={openCamera} title="Open camera" />
+    </View>
 
       <View style={styles.container}>
-        <View style={styles.screen}>
-      <View style={styles.buttonContainer}>
-        <Button onPress={showImagePicker} title="Select an image" />
-        <Button onPress={openCamera} title="Open camera" />
-      </View>
-
-
-    </View>
         <ButtonComponen title = "Choose Image" onPress="PickImage"> 
         {image && <Image source={{uri:image}} style={{
           width:200,
           height:200
         }} ></Image>}
         </ButtonComponent>
-        <Text style={{color:'red'}}
-        onPress={()=>Linking.openURL("https://github.com/KevinMacias181667/181667dmi")}>
-        GitHub
-
+      <Text style={{color: 'blue'}}
+        onPress={() => Linking.openURL("https://github.com/KevinMacias181667/181667dmi")}>
+          GitHub
         </Text>
+
+      
+        <Text>{i18n.t("Home Screen")}</Text>
+        <ButtonComponent title={i18n.t("Logout")} onPress={signOut} />
       </View>
     )
   }
